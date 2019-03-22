@@ -2,6 +2,7 @@
     <div id="firstcomponent" >
       <H1 v-bind:class="[myClass]">I'm a title</H1>
       <a>written by {{author}}</a>
+      <el-input v-model="input" placeholder="请输入内容"></el-input>
     </div>
 </template>
 
@@ -10,7 +11,8 @@ export default {
   data () {
     return {
       author: '王震',
-      myClass: 'testClass'
+      myClass: 'testClass',
+      input: 'ElementUI'
     }
   }
 }
